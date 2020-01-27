@@ -13,12 +13,9 @@ const products = [
 
 const calculateTotalPrice = function(allProdcuts, productName) {
   for (let product of allProdcuts) {
-    // console.log(product);
-
     const values = Object.values(product);
-    // console.log(values);
+    console.log(values);
     for (let i = 0; i < values.length; i++) {
-      // console.log(values[0]);
       if (values.includes(productName)) {
         let totalPrice;
         totalPrice = values[1] * values[2];
@@ -26,7 +23,7 @@ const calculateTotalPrice = function(allProdcuts, productName) {
       }
     }
   }
-};
+}; 
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.

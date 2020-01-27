@@ -8,7 +8,7 @@
 // выводит содержимое объекта user в формате ключ:значение используя Object.keys() и for...of
 
 const key = 'mood';
-const value = 'happy'; 
+const value = "happy"; 
 
 const user = {
   name: 'Mango',
@@ -18,16 +18,10 @@ const user = {
   [key]: value,
 };
 user[key] = value;
-console.table(user);
-
 user.hobby = 'skydiving'; 
-console.table(user);
-
 user.premium = false;
-console.table(user);
 
 const arrayUser = Object.keys(user);
-console.log(arrayUser);
 
 for (const names of arrayUser) {
   console.log(names, user[names]);
