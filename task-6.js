@@ -14,7 +14,6 @@ const products = [
 const calculateTotalPrice = function(allProdcuts, productName) {
   for (let product of allProdcuts) {
     const values = Object.values(product);
-    console.log(values);
     for (let i = 0; i < values.length; i++) {
       if (values.includes(productName)) {
         let totalPrice;

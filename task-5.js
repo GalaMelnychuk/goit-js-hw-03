@@ -15,8 +15,7 @@ const getAllPropValues = function(arr, prop) {
     if (prop in product) {
       values.push(product[prop]);
     }
-  }
-  return values;
+  } return values;
 };
 
 /*
